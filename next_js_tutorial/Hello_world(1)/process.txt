@@ -1,0 +1,17 @@
+For installation run command in terminal -------------------------------------------->
+npm i -g react next react-router
+npm i -g create-next-app
+
+Create your next app--------------------------------------------------->
+npx create-next-app next_tutorial
+
+Write hello world program in pages/index.js----------------------------------------->
+import React from 'react'
+
+export default function index() {
+  return (
+    <div>
+      <h1>Hello world</h1>
+    </div>
+  )
+}

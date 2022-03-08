@@ -1,0 +1,45 @@
+For http://localhost:3000/home just make pages/home.js and write ----------------------->
+import React from 'react'
+
+export default function home() {
+    return (
+        <div>
+            <h1>This is home page</h1>
+        </div>
+    )
+}
+
+For http://localhost:3000/about just make pages/about.js and write ---------------------->
+import React from 'react'
+
+export default function home() {
+    return (
+        <div>
+            <h1>This is about page</h1>
+        </div>
+    )
+}
+
+For http://localhost:3000/blog/blog1 just make pages/blog/blog1.js and write ---------------------->
+import React from 'react'
+
+export default function blgo1() {
+    return (
+        <div>
+            <h1>This is blog1 page</h1>
+        </div>
+    )
+}
+
+For http://localhost:3000/shop/[shop] just make pages/shop/[shop].js and write ---------------------->
+import React from 'react'
+import { useRouter } from 'next/router'
+
+export default function Shop() {
+    const router = useRouter();
+    return (
+        <div>
+            <h1>You come in {router.pathname} that is {router.asPath}</h1>
+        </div>
+    )
+}

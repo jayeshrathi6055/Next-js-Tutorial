@@ -1,0 +1,2 @@
+first install swr using command--------------->
+npm i swr

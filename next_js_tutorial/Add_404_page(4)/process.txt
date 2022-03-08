@@ -1,0 +1,10 @@
+Create 404.js in pages folder and Make your own 404 page like--------------------->
+import React from 'react'
+
+export default function Error() {
+    return (
+        <div>
+            <h1>We are sorry | Page not Found</h1>
+        </div>
+    )
+}
