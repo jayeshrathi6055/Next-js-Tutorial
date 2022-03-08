@@ -1,0 +1,49 @@
+.blogs h1{
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-bottom:1.5rem ;
+    margin-top: 1.5rem;
+}
+.allPopularBlogs{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+}
+.allPopularBlogs {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    overflow-y: scroll; 
+}
+
+.allPopularBlogs::-webkit-scrollbar {
+    display: none; 
+}
+.card{
+    border: 1px solid red;
+    margin: 1rem;
+    width: 25rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-top: 1rem;
+    flex-shrink: 0;
+}
+.blogLink{
+    font-size: 2rem;
+    padding: 0.3rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-top: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.blogLink:hover {
+    text-decoration: underline;
+    color: blue;
+}
