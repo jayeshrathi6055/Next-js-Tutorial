@@ -5,6 +5,14 @@ export default async function handler(req, res) {
       let date = new Date()
       let reg = / /g;
       let slug = (body.title).replace(reg,"-")
+      let temp = slug
+      for (let i of temp){
+        if(i=="?"){
+          slug = slug.replace(i,"");
+        }else if(i=="." || i=="/"){
+          slug = slug.replace(i,"")
+        }
+      }
       let data = fs.readFileSync('./pages/api/allBlogs.json','utf-8');
       data = JSON.parse(data)
       date = date.toDateString()
