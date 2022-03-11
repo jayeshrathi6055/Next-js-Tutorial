@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html{
@@ -55,4 +56,20 @@ nav form button{
 }
 nav form button:hover {
   background-color: blue;
+}
+
+
+@media screen and (max-width:355px) {
+  nav form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width:300px) {
+  nav h1{
+    font-size: 3rem;
+  }
 }

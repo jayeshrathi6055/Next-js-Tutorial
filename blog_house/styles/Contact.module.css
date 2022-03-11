@@ -31,3 +31,15 @@
 .form button:hover{
     background-color: rgb(20, 20, 255);
 }
+.heading{
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media screen and (max-width:750px) {
+  .form{
+    width: 80vw;
+  }
+}

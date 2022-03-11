@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import react,{useState} from "react";
@@ -9,15 +8,11 @@ export default function Home(props) {
   
   return (
     <>
-      {/* Head Tags */}
-      <Head>
-        <title>Blog House</title>
-      </Head>
 
       <main>
 
         <section className={styles.blogs}>
-          <h1>Popular Blogs</h1>
+          <h1>All Blogs</h1>
           <div className={styles.allPopularBlogs}>
             {
             ((blogs).map((el)=>{

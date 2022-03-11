@@ -37,6 +37,7 @@ const Contact = () => {
   };
   return (
     <>
+    <h2 className={styles.heading}>Make your Blog</h2>
       <form method="POST" onSubmit={Submit} className={styles.form}>
         <div>
           <label htmlFor="title">Title of your Blog</label>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import "../styles/globals.css";
 import { useRouter } from "next/router";
 import react,{useEffect, useState} from "react";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -36,6 +37,11 @@ function MyApp({ Component, pageProps }) {
   }
   return (
     <>
+    {/* Head Tags */}
+    <Head>
+      <title>Blog House</title>
+    </Head>
+
       {/* Navigation Bar */}
       <nav>
         <div className="logo">

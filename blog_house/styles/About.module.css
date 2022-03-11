@@ -1,0 +1,16 @@
+.container{
+width: 90%;
+margin: 2rem auto;
+font-size: 1.6rem;
+}
+.container h2{
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+}
+.container *::selection{
+    background-color: yellow;
+    color: rgb(34, 34, 34);
+}
+.center{
+text-align: center;
+}
