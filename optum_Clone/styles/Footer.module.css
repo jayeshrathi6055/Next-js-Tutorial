@@ -1,0 +1,101 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: space-evenly;
+    background-color: var(--bgcolor);
+}
+.links{
+    background-color: var(--bgcolor);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.links h1{
+    font-size: 7rem;
+    text-align: center;
+    width: 30%;
+    color: white;
+    font-weight: bolder;
+}
+.links a{
+    color: white;
+    font-size: 1.8rem;
+}
+.links ul{
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    width: 70%;
+    padding-right: 8rem;
+    justify-content: flex-end;
+}
+
+.rights{
+    background-color: var(--bgcolor);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rights p{
+    font-size: 1.8rem;
+    text-align: center;
+    width: 48%;
+    color: white;
+    font-weight: bolder;
+}
+.socialMedia{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 8rem;
+    flex-wrap: wrap;
+}
+.socialMedia h3{
+    color: white;
+    font-size: 2rem;
+    padding-bottom:1rem ;
+    font-weight: bolder;
+}
+.socialMedia ul{
+    list-style: none;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.socialMedia ul li a {
+    color: white;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width:877px) {
+    .footer{
+        height: auto;
+    }
+    .links{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links h1, .links ul{
+        width: 100%;
+    }
+    .links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0rem 5vw 10vw 5vw;
+    }
+    .links h1{
+        text-align: start;
+        padding: 2rem 5vw;
+    }
+    .rights{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .rights p{
+        width: 100%;
+        text-align: start;
+        margin-top: 5vw;
+    }
+    .socialMedia ul, .socialMedia h3{
+        width: 100%;
+        padding: 0rem 5vw;
+    }
+}

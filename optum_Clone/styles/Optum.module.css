@@ -1,0 +1,87 @@
+.general_page{
+    background-color: var(--bgcolor);
+    padding:0rem 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.general_page a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+.general_page a:hover{
+    text-decoration: underline;
+}
+.general_page h1{
+    font-size: 4.8rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.image{
+    position: relative;
+    text-align: center;
+}
+.image::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: var(--bgcolor);
+    height: 45%;
+    z-index: -1;
+}
+.image img{
+    min-width: 85vw !important;
+}
+
+.about{
+    font-size: 1.8rem;
+    padding: 7rem 0rem 2rem 0rem;
+    width: 75%;
+    margin: auto;
+}
+.about h2{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+.about p{
+    padding-bottom:3rem ;
+}
+.about button{
+    padding: 2rem 3rem;
+}
+ 
+.goUp{
+    font-size: 3rem;
+    position: fixed;
+    bottom: 10%;
+    left: 0%;
+    background-color: white;
+    color: white;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 7%;
+    visibility: hidden;
+}
+.goUp span{
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(255, 39, 75);
+    color: white;
+    font-weight: bolder;
+    margin: 1rem;
+}
+
+
+@media screen and (max-width:650px) {
+    .goUp{
+        width: 11%;
+    }
+}
